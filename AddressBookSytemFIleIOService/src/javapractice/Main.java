@@ -1,12 +1,13 @@
 package javapractice;
 
+import java.io.IOException;
 import java.util.Scanner;
 import java.util.Set;
 
 public class Main {
     AddressBookStorage addressBookStorage = AddressBookStorage.getInstance();
 
-    public void handleUserMenuOption(int choice) {
+    public void handleUserMenuOption(int choice) throws IOException {
         Scanner get = new Scanner(System.in);
 
         switch(choice) {
@@ -273,7 +274,7 @@ public class Main {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         System.out.println("Welcome to Address Book System");
 
         UserInterface userInterface = UserInterface.getInstance();

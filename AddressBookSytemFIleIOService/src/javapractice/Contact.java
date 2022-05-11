@@ -33,15 +33,13 @@ public class Contact {
 
     @Override
     public String toString() {
-        return "Contact{" +
-                "firstName='" + firstName + '\'' +
+        return  "firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", address='" + address + '\'' +
                 ", city='" + city + '\'' +
                 ", state='" + state + '\'' +
                 ", pinCode=" + pinCode +
                 ", phoneNumber=" + phoneNumber +
-                ", emailId='" + emailId + '\'' +
-                '}';
+                ", emailId='" + emailId;
     }
 }

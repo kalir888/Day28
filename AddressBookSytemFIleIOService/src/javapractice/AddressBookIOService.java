@@ -1,14 +1,13 @@
 package javapractice;
 
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Set;
 
 public class AddressBookIOService {
     private static AddressBookIOService instance;
-    public static String fileName = "ContactBook.txt";
+    public static String fileName = "ContactBook.csv";
 
     private AddressBookIOService() {
     }
